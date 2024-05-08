@@ -1,0 +1,23 @@
+[
+    {
+        "name": "read_node",
+        "type": "ReadFunc",
+        "deps": [],
+        "outputs": {
+            "one": "tb.one"
+        }
+    },
+    {
+        "name": "add_node",
+        "type": "AddFunc",
+        "deps": [
+            "read_node"
+        ],
+        "inputs": {
+            "one": "tb.one"
+        },
+        "outputs": {
+            "two": "tb.two"
+        }
+    }
+]
